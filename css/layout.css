@@ -1,0 +1,128 @@
+@font-face {
+  font-family: "gloria";
+  src: url(../font/GloriaHallelujah-Regular.woff2);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "chewy";
+  src: url(../font/Chewy-Regular.woff2);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "montsarrat";
+  src: url(../font/MontserratAlternates-Regular.woff2);
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+main {
+  background-color: #dbfaff;
+}
+.forside {
+  display: grid;
+}
+.forside h1 {
+  grid-area: 1 / 1;
+  z-index: 2;
+  place-self: start;
+  margin-top: 9%;
+  margin-left: 9%;
+}
+
+.forside .sundhed {
+  grid-area: 1/1;
+  place-self: end;
+  justify-self: right;
+  margin: 0 8em 1em 0;
+  width: 10%;
+  height: auto;
+}
+
+.penge {
+  font-family: gloria;
+  font-size: clamp(14pt, 2vw, 20pt);
+  text-align: center;
+  margin: 2em 0 -5em 0;
+}
+.gris {
+  place-self: top;
+  justify-self: center;
+}
+.logo {
+  margin-top: 3%;
+  width: 16%;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+footer section p {
+  margin-top: 6%;
+}
+.grid_1_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.overskrift_s_s {
+  display: grid;
+}
+.overskrift_s_s h1 {
+  grid-area: 1/1;
+  z-index: 2;
+  margin: 0.3em 0.3em;
+  position: absolute;
+  top: 18%;
+  left: 8%;
+}
+.overskrift_s_s img {
+  grid-area: 1/1;
+  justify-self: center;
+  margin: 3em 0 1em 0;
+}
+
+.tyggegummi {
+  grid-column: 1/-1;
+  margin: 1em 0;
+}
+.tipstricks h3 {
+  font-size: clamp(12px, 2vw, 24px);
+  font-family: gloria;
+}
+.koeb {
+  background-color: #7ae87e;
+  border: none;
+  font-family: gloria;
+  padding: 0.5em 2em;
+  font-size: clamp(10px, 2vw, 20px);
+  place-self: center;
+  margin-top: 3em;
+}
+.koeb:hover {
+  color: white;
+  cursor: pointer;
+}
+.koeb,
+h4 {
+  margin-left: 1em;
+}
+.oeje {
+  grid-column: 1/-1;
+  place-self: center;
+  margin-bottom: 1em;
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 6em;
+}
+.link img {
+  max-width: 100%;
+  height: auto;
+}

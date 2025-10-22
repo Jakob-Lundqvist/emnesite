@@ -1,0 +1,609 @@
+@font-face {
+  font-family: "gloria";
+  src: url(../font/GloriaHallelujah-Regular.woff2);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "chewy";
+  src: url(../font/Chewy-Regular.woff2);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "montsarrat";
+  src: url(../font/MontserratAlternates-Regular.woff2);
+  font-weight: normal;
+  font-style: normal;
+}
+.forside p {
+  grid-area: 1/1;
+  place-self: end;
+  justify-self: left;
+  padding-bottom: 55%;
+  padding-left: 30%;
+}
+header nav ul li {
+  font-size: 1.5em;
+  background-color: #63e7e5;
+  padding: 0.4em 2em;
+  text-decoration: none;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-top: 1.6em;
+  margin-bottom: 1em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+footer {
+  border-top: 2px solid black;
+  display: flex;
+  justify-content: space-evenly;
+}
+.beregner {
+  background-color: #ff6464;
+  grid-area: 1/1;
+  place-self: end;
+  text-decoration: none;
+  color: #5c5655;
+  font-size: 20pt;
+  margin: 0 8em 10em;
+  padding: 0.3em 1.6em;
+  border-radius: 0.4em;
+}
+.forside img {
+  grid-area: 1 / 1;
+}
+.spare {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 1fr 1fr;
+}
+.grid_1_1 h3,
+.tyggegummi {
+  font-family: gloria;
+  font-size: clamp(14px, 2vw, 26px);
+}
+.sundhedside li {
+  line-height: 1.8em;
+  margin: 1em 0em 1em 10em;
+}
+.tabel {
+  grid-column: 1/-1;
+  grid-row: 1;
+  justify-self: center;
+  margin-top: 2em;
+}
+.sundhedside .s_s_p {
+  margin: 1em 6em 1em 0;
+}
+.app {
+  justify-self: right;
+  border-radius: 40px;
+  border: 1px solid black;
+  margin-bottom: 1em;
+}
+.tips {
+  text-decoration: none;
+  color: #5c5655;
+  background-color: #82ff8f;
+  margin: 0 0 2em 6em;
+  border-radius: 0.6em;
+  font-size: clamp(16px, 2vw, 26px);
+  grid-area: 1/1;
+  place-self: end;
+  justify-self: left;
+  padding: 0.4em 1em;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.sundhedtekst {
+  text-decoration: none;
+  color: #5c5655;
+  background-color: #82ff8f;
+  border-radius: 0.6em;
+  font-size: clamp(16px, 2vw, 26px);
+  place-self: end;
+  justify-self: right;
+  grid-area: 1/1;
+  margin: 0em 13em 2em 0;
+  padding: 0.4em 2em;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.login1 {
+  display: none;
+}
+@media (width < 1100px) {
+  .star {
+    display: none;
+  }
+}
+
+/* mobilsite */
+@media (width < 800px) {
+  nav,
+  .login,
+  .profile {
+    display: none;
+  }
+
+  /* tips og trickside */
+  .tipstricks .grid_1_1 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .tipstricks h1 {
+    place-self: center;
+  }
+  .gummi {
+    grid-row: 1/1;
+    justify-self: center;
+    display: grid;
+  }
+  .tipstricks main {
+    margin: 0 2em;
+  }
+  .liste1 li,
+  .liste2 li {
+    margin: 1em 2em;
+  }
+  .gummi,
+  .haand {
+    margin: 1em 1em;
+    width: 100%;
+    display: block;
+    max-width: 90%;
+  }
+  .tyggegummi {
+    font-size: clamp(20px, 4vw, 40px);
+    justify-self: center;
+  }
+  .reklame {
+    margin-left: 0;
+  }
+  .nikofri {
+    grid-column: 2/-1;
+    grid-row: 2;
+    margin-right: 1em;
+  }
+  .snusfri {
+    grid-row: 2;
+  }
+  .app {
+    justify-self: center;
+    grid-column: 1;
+    margin: 0 1em;
+  }
+  .link {
+    grid-row: 2;
+    grid-column: 2;
+    margin: 0 1.5em;
+  }
+  .oeje {
+    grid-column: span 2;
+  }
+
+  /* sundhedsside */
+  .sundhedside .grid_1_1 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .tabel {
+    grid-row: 3;
+  }
+  .sundhedside li,
+  .s_s_p {
+    margin: 0.7em 2em;
+  }
+
+  /* forside */
+  .forside p {
+    padding-top: 18%;
+    font-size: clamp(14px, 1.6vw, 28px);
+  }
+  .index {
+    grid-template-columns: 1fr;
+  }
+  .spare {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .forside h1 {
+    place-self: center;
+    margin-top: 10em;
+    grid-area: 0;
+  }
+  .sparegris {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: 1fr 1fr;
+  }
+  .forside {
+    grid-template-columns: 1fr;
+    grid-template-rows: 5fr 1fr 1fr;
+  }
+  .tips {
+    grid-area: auto;
+    grid-row: 2;
+    place-self: center;
+    margin: 0;
+  }
+  .t_t {
+    grid-area: auto;
+    grid-row: 2;
+    place-self: baseline;
+    display: none;
+  }
+  .sundhedtekst {
+    grid-area: auto;
+    grid-row: 3;
+    place-self: center;
+    margin: 0;
+  }
+  .forside img:nth-child(3) {
+    grid-area: auto;
+    grid-row: 2;
+  }
+  .ung_gruppe {
+    object-fit: contain;
+    padding: 0 1em;
+  }
+  .sundhed {
+    display: none;
+  }
+  .beregner {
+    margin: 0 0 4em 0;
+    justify-self: center;
+    font-size: 12pt;
+    grid-area: 1/1;
+  }
+  .help {
+    margin-top: 17%;
+  }
+  footer {
+    display: grid;
+    grid-template-rows: auto;
+  }
+  footer p {
+    grid-row: 2;
+  }
+  .kontakt {
+    justify-content: right;
+  }
+  .gris {
+    object-fit: contain;
+    max-width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
+  /* burgermenu */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #74ffc0;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu li {
+    margin-right: 20px;
+  }
+
+  .menu li:last-child {
+    margin-right: 0;
+  }
+
+  .menu a {
+    display: block;
+    padding: 10px;
+    color: #333333;
+    text-decoration: none;
+    transition: color 0.3s;
+    text-align: center;
+    background-color: #63e7e5;
+    margin: 1em 0;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .menu a:hover {
+    color: #ffffff;
+  }
+
+  .burger {
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+  }
+
+  .burger .line {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #333333;
+    margin-bottom: 5px;
+    transition: 0.2s linear;
+  }
+  .burger {
+    display: none;
+  }
+  @media screen and (width < 800px) {
+    .menu {
+      display: none;
+    }
+    .burger {
+      display: block;
+      background-color: transparent;
+      border: 0;
+    }
+    .burger.active .line:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+      transition: 0.2s linear;
+    }
+
+    .burger.active .line:nth-child(2) {
+      opacity: 0;
+      transition: 0.15s linear;
+    }
+
+    .burger.active .line:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+      transition: 0.2s linear;
+    }
+
+    nav.active .menu {
+      display: block;
+      background-color: #369ea3;
+      position: absolute;
+      top: 90px;
+      right: 0;
+      width: 40%;
+      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+      z-index: 1;
+    }
+
+    nav.active .menu li {
+      margin: 10px 20px;
+    }
+
+    nav.active .menu a {
+      font-size: 24px;
+    }
+    header nav ul li {
+      padding: 0;
+    }
+  }
+
+  /* burgermenu */
+}
+footer p {
+  margin-top: 1em;
+}
+.forside .t_t {
+  place-self: end;
+  justify-self: left;
+  margin-left: 35%;
+  margin-bottom: 1%;
+  width: 10%;
+}
+.sparegris {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr;
+}
+
+.reklame {
+  margin-left: 2.9em;
+}
+.forside h1 {
+  grid-area: 1 / 1;
+}
+.forside h1 {
+  font-family: chewy;
+  font-size: clamp(40px, 8vw, 115px);
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+header {
+  background-color: #74ffc0;
+  display: flex;
+  justify-content: space-between;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+.logo-area {
+  margin-left: 2em;
+  margin-bottom: 0.5em;
+}
+.profile {
+  margin-top: 1em;
+  margin-right: 1em;
+}
+
+header nav ul li :hover {
+  color: white;
+}
+li a {
+  text-decoration: none;
+  color: black;
+}
+
+a {
+  font-family: gloria;
+}
+.login {
+  font-family: gloria;
+  font-size: 24pt;
+  background-color: white;
+  border: none;
+  line-height: 0;
+  margin-top: 1.2em;
+  margin-bottom: 1em;
+  margin-right: 1em;
+  margin-left: 1em;
+  padding: 1em;
+}
+.nav {
+  display: flex;
+}
+.ung_gruppe {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-inline: auto;
+}
+img {
+  max-width: 100%;
+}
+.forside p {
+  font-family: montsarrat;
+  font-size: clamp(18px, 2vw, 33px);
+}
+
+footer p {
+  font-family: montsarrat;
+}
+.footlogo {
+  display: flex;
+}
+.kontakt {
+  display: flex;
+  margin: 0 5em;
+}
+
+.sundhedtekst:hover {
+  background-color: #ff6464;
+}
+.tips:hover {
+  background-color: #ff6464;
+}
+.beregner:hover {
+  background-color: #ffee55;
+}
+.tipstricks,
+.sundhedside {
+  background-color: #f2fff1;
+}
+
+/* snus beregneren */
+.lommeregner {
+  border: 1px solid black;
+  background-color: #d2d2d2;
+  margin: 10% 20%;
+  text-align: center;
+  padding: 5% 10%;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 10px;
+}
+.lommeregner p {
+  font-family: gloria;
+  font-size: clamp(12px, 2vw, 22px);
+  background-color: white;
+  border: 1px solid black;
+  margin: 0.5em;
+}
+.lommeregner button {
+  font-family: gloria;
+  font-size: clamp(12px, 2vw, 22px);
+  margin-top: 1.3em;
+  background-color: #ffaa55;
+}
+.lommeregner h4,
+h3 {
+  font-family: gloria;
+  font-size: clamp(14px, 2vw, 26px);
+}
+.lommeregner :first-child {
+  margin: -3 0 0 0;
+  border: 1px solid black;
+  border-bottom: 1.5px solid black;
+}
+.kr {
+  margin: 2em 0 0 0;
+  border: 1px solid black;
+  background-color: white;
+  padding: 0 2em;
+}
+#snus {
+  margin-bottom: 1em;
+  padding: 0.1em 2em;
+}
+h1 {
+  font-family: chewy;
+  font-size: clamp(35px, 8vw, 90px);
+}
+.tipstricks h1 {
+  margin: 0 0 0 0.6em;
+}
+.tipstricks ul li {
+  font-family: montsarrat;
+  font-size: clamp(10px, 2vw, 20px);
+}
+
+.liste1 {
+  place-self: center;
+  line-height: 2em;
+  margin-left: 2em;
+}
+.liste2 {
+  place-self: center;
+  line-height: 2em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+.haand {
+  place-self: center;
+}
+
+.sundhedside p,
+li {
+  font-family: montsarrat;
+  font-size: clamp(10px, 2vw, 20px);
+}
+.sundhedside p {
+  line-height: 1.5em;
+  margin: 1em;
+}
+.sundhedside ul :first-child {
+  list-style-type: none;
+  font-weight: bolder;
+}
+.sundhedside h2 {
+  font-size: clamp(14px, 2vw, 28px);
+  margin: 0 1em;
+  font-family: gloria;
+}
+.diagram {
+  justify-self: right;
+  justify-self: center;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  object-fit: contain;
+}
