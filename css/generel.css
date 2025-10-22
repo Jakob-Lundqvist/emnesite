@@ -556,6 +556,7 @@ h3 {
 }
 h1 {
   font-family: chewy;
+  font-size: large;
   font-size: clamp(35px, 8vw, 90px);
 }
 .tipstricks h1 {

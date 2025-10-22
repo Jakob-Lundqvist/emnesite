@@ -75,8 +75,9 @@ footer section p {
   z-index: 2;
   margin: 0.3em 0.3em;
   position: absolute;
-  top: 18%;
+  top: 20%;
   left: 8%;
+  font-size: clamp(35px, 8vw, 90px);
 }
 .overskrift_s_s img {
   grid-area: 1/1;
