@@ -209,13 +209,10 @@ footer {
   }
   .forside h1 {
     place-self: center;
-    margin-top: 10em;
-    grid-area: 0;
   }
   .sparegris {
     display: grid;
     grid-template-columns: 1fr;
-    grid-row: 1fr 1fr;
   }
   .forside {
     grid-template-columns: 1fr;
@@ -540,7 +537,7 @@ h3 {
   font-size: clamp(14px, 2vw, 26px);
 }
 .lommeregner :first-child {
-  margin: -3 0 0 0;
+  margin: 0 0 0 0;
   border: 1px solid black;
   border-bottom: 1.5px solid black;
 }
